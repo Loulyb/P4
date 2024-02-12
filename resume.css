@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* CSS dokument */
 
+* {
+    /* allows us to include the padding and border in an element's total width and height */
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Defining variables and setting height */
 html,body {
     --brand-color: #525b53;

@@ -43,6 +43,7 @@ p {
 
 .content-width {
     max-width: var(--max-width);
+    margin: auto;
 }
 
 .links-white {
@@ -55,22 +56,17 @@ p {
     font-weight: 400;
 }
 
-.main-styling{
-    justify-content: center;
-}
-
 .bg-footer {
-    display: flex;
     background-color: var(--brand-color);
     padding: 50px 20px;
-    justify-content: center;
+    margin: auto;
 }
 .container-footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .section-footer {
     text-align: center;

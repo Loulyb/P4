@@ -55,6 +55,10 @@ p {
     font-weight: 400;
 }
 
+.main-styling{
+    justify-content: center;
+}
+
 .bg-footer {
     display: flex;
     background-color: var(--brand-color);

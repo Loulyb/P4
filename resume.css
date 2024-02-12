@@ -14,10 +14,13 @@ html,body {
     --brand2-color: #3f444b;
     --txt-color: #000000;
     --white-color: #ffffff;
+
+    --max-width: 1200px;
 }
 
 h2, h3, p {
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 8px;
 }
 
 h2 {
@@ -38,6 +41,10 @@ p {
     font-weight: 400;
 }
 
+.links-white {
+    color: var(--white-color);
+}
+
 .txt_header {
     font-size: 14px;
     line-height: 20px;
@@ -46,12 +53,17 @@ p {
 
 .bg-footer {
     background-color: var(--brand-color);
-    padding: 50px, 20px;
+    padding: 50px 20px;
+    justify-content: center;
+
 }
 .container-footer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     align-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 .section-footer {
     text-align: center;
@@ -71,4 +83,8 @@ p {
 
 /* Desktop menu */
 @media only screen and (min-width: 960px) {
+    .container-footer {
+        flex-direction: row;
+        max-width: var(--max-width);
+}
 }

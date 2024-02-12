@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS dokument */
+
+/* Defining variables and setting height */
+html,body {
+    --brand-color: #525b53;
+    --brand2-color: #3f444b;
+    --txt-color: #000000;
+    --bg-color: #ffffff;
+}
+
+h2, h3, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.txt_header {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}

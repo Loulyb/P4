@@ -52,17 +52,16 @@ p {
 }
 
 .bg-footer {
+    display: flex;
     background-color: var(--brand-color);
     padding: 50px 20px;
     justify-content: center;
-
 }
 .container-footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-content: center;
-    align-items: center;
     justify-content: space-evenly;
 }
 .section-footer {

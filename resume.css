@@ -6,7 +6,7 @@ html,body {
     --brand-color: #525b53;
     --brand2-color: #3f444b;
     --txt-color: #000000;
-    --bg-color: #ffffff;
+    --white-color: #ffffff;
 }
 
 h2, h3, p {
@@ -48,6 +48,8 @@ p {
 }
 .section-footer {
     text-align: center;
+    color: var(--white-color);
+    padding-top: 16px;
 }
 
 /* Making images responsive */

@@ -41,6 +41,10 @@ p {
     font-weight: 400;
 }
 
+.content-width {
+    max-width: var(--max-width);
+}
+
 .links-white {
     color: var(--white-color);
 }
@@ -84,6 +88,5 @@ p {
 @media only screen and (min-width: 960px) {
     .container-footer {
         flex-direction: row;
-        max-width: var(--max-width);
 }
 }

@@ -36,3 +36,30 @@ p {
     line-height: 20px;
     font-weight: 400;
 }
+
+.bg-footer {
+    background-color: var(--brand-color);
+    padding: 50px, 20px;
+}
+.container-footer {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+.section-footer {
+    text-align: center;
+}
+
+/* Making images responsive */
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tablet menu */
+@media only screen and (min-width: 700px) {
+}
+
+/* Desktop menu */
+@media only screen and (min-width: 960px) {
+}

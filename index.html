@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="resume.css">
-    <script src="resume.js"></script>
+    <script src="resume.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
@@ -32,7 +32,8 @@
                 slideshow
                 Overskrift
              </div>
-
+             
+    <!-- Start på slide show -->
              <div class="slideshows-width">
                 <div class="slidess">
                     <img src="images/slide_1/madpaaresume.svg" alt="slide_1">
@@ -74,6 +75,33 @@
                 </div>
             </div>
         </div>
+    <!-- slut på slide show -->
+
+    <!-- start på book bord knap -->
+        <button id="openBooking">Book Bord</button>
+        
+        <div id="bookingPopup" class="booking-popup">
+          <div class="booking-content">
+            <div class="booking-header">
+              <span class="close" id="closeBooking">&times;</span>
+              <h3>Book Bord</h3>
+            </div>
+            <form id="bookingForm">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="guests">Antal gæster:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                <label for="date">Vælg en dato:</label>
+                <input type="date" id="date" placeholder="" name="date" required>
+                <button type="submit">Send Booking</button>
+              </form>              
+          </div>
+        </div>
+        <!-- slut på book bord knap -->
     </main>
 
     <footer>

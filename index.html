@@ -10,11 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <header class="margin-around-main">
-        <nav class="content-width">
-            <div class="Logo">Logo</div>
+        <nav id="togglemenu" class="content-width hidden">
+            <div id="logo">
+                <img src="images/Logo.png">
+            </div>
             <div class="txt_header">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -42,6 +45,11 @@
                 </ul> 
             </div>
         </nav>
+        <div>
+            <button type="button" class="menu-open" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
     <main class="content-width">

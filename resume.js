@@ -1,3 +1,16 @@
+/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+    if (document.getElementById("togglemenu").className == "content-width") {
+        let hamburger = document.getElementById("togglemenu");
+        hamburger.classList.add("hidden");
+    } else {
+        let hamburger = document.getElementById("togglemenu");
+        hamburger.classList.remove("hidden");
+    }   
+  }
+
+
+// Slider top start
 let indexSliderTop = 0;
 sliderTop ();
 

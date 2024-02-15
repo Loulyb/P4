@@ -66,7 +66,6 @@ nav {
     display: flex;
     justify-content: space-between;
     text-align: center; 
-    z-index: 99;
 }
 
 nav ul{
@@ -78,11 +77,12 @@ nav ul li{
    width: 120px;
    margin: 15px;
    padding: 15px;
+   z-index: 1;
 }
 
 nav ul li a{
     color: var(--white-color);
-    text-decoration: none;   
+    text-decoration: none; 
 }
 
 .active, nav li:hover{
@@ -97,7 +97,7 @@ nav ul li a{
 nav ul li:hover .sub-menu-1 {
      display: block; 
      position: absolute; 
-     background-color: var(--brand2-color);
+     background-color: var(--txt-color);
      color: var(--txt-color); 
      margin-top: 15px;margin-left: -15px;
 }

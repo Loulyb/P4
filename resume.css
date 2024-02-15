@@ -46,9 +46,45 @@ p {
     max-width: var(--max-width);
     margin: auto;
 }
+/*multiple slideshows*/
+.slideshows-width {
+    flex: 1;
+    width: 300px;
+    height: auto; 
+    overflow: hidden;
+    margin: 0 auto 20px;
+    
+}
+.slidess {
+    display:flex; 
+    text-align: left; 
+}
+
+.slidess img {
+    display: none;
+    width: 100%;
+    height: 240px; 
+    object-fit: cover;
+}
+.slidess img:first-child {
+    display: block; 
+}
+
+.textbox-slide {
+    background-color:transparent;
+    padding: 10px; 
+    text-align: center; 
+}
+
+.textbox-slide p {
+    margin: 10px 0; 
+}
 
 .links-white {
     color: var(--white-color);
+}
+.links-black{
+    color: var(--txt-color);
 }
 
 .txt_header {
@@ -109,4 +145,103 @@ p {
     .container-footer {
         flex-direction: row;
 }
+.content-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.slideshows-width {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+}
+
+/* Start på book bord*/
+#openBooking {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: #3f444b;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  #openBooking:hover {
+    background-color: var(--brand-color); /* Ændre baggrundsfarve ved hover */
+  }
+
+  .booking-popup {
+    display: none;
+    position: fixed;
+    bottom: 70px; /* Juster afstanden fra bunden efter behov */
+    right: 20px;
+    background-color: var(--brand-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 1000;
+    width: 300px;
+  }
+
+  #bookingForm{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+  }
+  
+  .booking-content {
+    width: 100%;
+  }
+  
+  .booking-header {
+    background-color: var(--brand-color); /* Baggrundsfarve for overskriften */
+    color: #fff; /* Tekstfarve for overskriften */
+    padding-bottom: 10px;
+  }
+
+  .booking-header .close {
+    position: relative;
+    top: -15px;
+    float: right; /* Placer krydset til højre */
+    cursor: pointer; /* Ændre musemarkør til en hånd ved hover */
+    font-size: 30px;
+  }
+  
+  .booking-header .close:hover {
+    color: #f00; /* Ændre farven på krydset ved hover */
+  }
+
+  .booking-content label{
+    display: block;
+    color: #ffffff;
+    margin: 2px;
+  }
+
+  .booking-content input, 
+.booking-content textarea {
+  width: 100%;
+  padding: 8px; 
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+  
+.booking-content button[type="submit"] {
+    padding: 10px 20px; 
+    background-color: #ffffff; 
+    color: var(--txt-color); 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin-top:10px;
+  }
+  
+  .booking-content button[type="submit"]:hover {
+    background-color: var(--brand2-color);
+    color: #ffffff;
+  }
+
+  /*Slut på book bord*/

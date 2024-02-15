@@ -81,15 +81,13 @@ nav ul li{
    z-index: 1;
 }
 
+/* Sætter top navigation tekst color og deco */
 nav ul li a{
     color: var(--white-color);
     text-decoration: none; 
 }
 
-.active, nav li:hover{
-    border-radius: 3px;
-}
-
+/* Styling af drop-down menuerne */
 .sub-menu-1,
 .sub-menu-2
 {
@@ -98,49 +96,62 @@ nav ul li a{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.sub-menu-1 a {
-  color: var(--txt-color);
-}
-
-.sub-menu-1 a:hover{
-  color: var(--white-color);
-}
-
-.sub-menu-1 ul li:hover{
-  background-color: var(--brand2-color);
-}
-
+/* Sætter tekst color på drop down menuerne */
+.sub-menu-1 a,
 .sub-menu-2 a {
   color: var(--txt-color);
 }
 
+/* Overwriter margin og padding som arves fra headeren */
+.sub-menu-1 ul li,
+.sub-menu-2 ul li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ændrer bg color ved hover over de forskellige elementer */
+.sub-menu-1 ul li:hover{
+  background-color: var(--brand2-color);
+}
+
+/* Ændrer item color ved hover */
+.sub-menu-1 ul li:hover a{
+  color: var(--white-color);
+}
+
+/* Viser første sub menu ved hover */
 nav ul li:hover .sub-menu-1 {
-     display: block; 
-     position: absolute;  
-     margin-top: 15px;margin-left: -15px;
+  display: block;
+  position: absolute;  
+  margin-top: 15px;
+  margin-left: -15px;   
 }
 
+/* Sætter direction for items i drop down */
 nav ul li:hover .sub-menu-1 ul {
-    display: block;
-    margin: 10px;  
+  display: block;
 }
 
+/* Styling of list items */
 nav ul li:hover .sub-menu-1 ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px;
-    border-radius: 0;
-    text-align: left;
+  width: auto;
+  padding: 20px;
+  border-bottom: 1px;
+  text-align: left;
 }
 
-.hover-me:hover .sub-menu-2{
-    position: absolute;
-    display: block;
-    margin-top: -40px;
-    margin-left: 140px;
+/* Viser sub menu 2 ved hover over sub menu 1 */
+.hover-sub-1:hover .sub-menu-2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 160px;
+  margin-right: -160px;
 }
-
 /*navbar slut*/
+
+
+
 
 .content-width {
   max-width: var(--max-width);

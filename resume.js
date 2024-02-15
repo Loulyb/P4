@@ -1,4 +1,3 @@
-slider_top
 let indexSliderTop = 0;
 sliderTop ();
 
@@ -83,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Slut på slide show
 
-//Start på book bord
-
 document.getElementById('openBooking').addEventListener('click', function() {
     let bookingPopup = document.getElementById('bookingPopup');
     if (bookingPopup.style.display === 'block') {
@@ -123,4 +120,6 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
     document.getElementById('bookingPopup').style.display = 'none';
 });
 
-//Slut på book bord
+
+
+  

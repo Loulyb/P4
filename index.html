@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="resume.css">
-    <script src="resume.js"></script>
+        <script src="resume.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
@@ -43,21 +43,105 @@
             </div>
         </nav>
     </head>
-    <main>
-        <div class="content-width">
-            <div>
-                slideshow
-                Overskrift
+
+    <main class="content-width">
+        <div id="bg-container-slide_top">
+            <div id="container-slide_top">
+                <div>
+                    <img class="responsive-img fade img-top" src="images/slide_top/img_1.jpg" alt="Restaurant Resumé">
+                </div>
+                <div>
+                    <img class="responsive-img fade img-top" src="images/slide_top/img_2.jpg" alt="Restaurant Resumé">
+                </div>
+                <div>
+                    <img class="responsive-img fade img-top" src="images/slide_top/img_3.jpg" alt="Restaurant Resumé">
+                </div>
+                <div>
+                    <img class="responsive-img fade img-top" src="images/slide_top/img_4.jpg" alt="Restaurant Resumé">
+                </div>
+                <div>
+                    <img class="responsive-img fade img-top" src="images/slide_top/img_5.jpg" alt="Restaurant Resumé">
+                </div>
+                <div>
+                    <img class="responsive-img fade img-top" src="images/slide_top/img_6.jpg" alt="Restaurant Resumé">
+                </div>
             </div>
-            <div>
-                3 underpunkter
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <h2>Ambitiøs restaurant med fødderne solidt plantet i den sydfynske muld</h2>
         </div>
+        
+       <!-- Start på slide show -->
+       <div class="slideshows-width">
+        <div class="slidess">
+            <img src="images/slide_1/madpaaresume.svg" alt="slide_1">
+            <img src="images/slide_1/madpaaresume2.svg" alt="slide_1">
+        </div>
+        <div class="textbox-slide">
+            <h3>MAD & DRIKKE</h3>
+            <p>
+                <a class="links-black" href="https://www.restaurantresume.dk/universet/">Universet på Resumé</a> <br>
+                <a class="links-black" href="https://www.restaurantresume.dk/en-stor-aften-hos-resume/">En stor aften på Resumé</a> <br>
+                <a class="links-black" href="https://www.restaurantresume.dk/en-aften-paa-resume-hverdag/">En hverdagsaften på Resumé</a> <br>
+            </p>
+        </div>
+    </div> 
+    
+    <div class="slideshows-width">
+        <div class="slidess">
+            <img src="images/slide_2/historien.svg" alt="slide_2">
+            <img src="images/slide_2/historien2.svg" alt="slide_2">
+        </div>
+        <div class="textbox-slide">
+            <h3>Vores historie</h3>
+            <p>
+                <a class="links-black" href="https://www.restaurantresume.dk/en-aften-paa-resume-hverdag/">Læs mere</a> <br>
+            </p>
+      </div>
+    </div>
+    
+    <div class="slideshows-width">
+        <div class="slidess">
+            <img src="images/slide_3/koncept.svg" alt="slide_3">
+            <img src="images/slide_3/konceprt2.svg" alt="slide_3">
+        </div>
+        <div class="textbox-slide">
+            <h3>Koncept</h3>
+            <p>
+                <a class="links-black" href="https://www.restaurantresume.dk/koncept/">Læs mere</a> <br>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- slut på slide show -->
+
+        
+        
+        <button id="openBooking">Book Bord</button>
+        
+        <div id="bookingPopup" class="booking-popup">
+          <div class="booking-content">
+            <div class="booking-header">
+              <span class="close" id="closeBooking">&times;</span>
+              <h3>Book Bord</h3>
+            </div>
+            <form id="bookingForm">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="guests">Antal gæster:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+                <label for="date">Vælg en dato:</label>
+                <input type="date" id="date" placeholder="" name="date" required>
+                <button type="submit">Send Booking</button>
+              </form>              
+          </div>
+        </div>
+        
     </main>
     <footer>
+    
         <div class="bg-footer">
             <div class="container-footer content-width">
                 <div class="section-footer">
@@ -84,8 +168,7 @@
                        Torsdag: 17:30 - 24:00 <br>
                        Fredag: 17:30 - 24:00 <br>
                        Lørdag: 17:30 - 24:00 <br>
-                       Søndag: Lukket <br>
-                       Køkkenet lukker alle dage kl. 21:30
+                       Søndag: Lukket 
                     </p>
                 </div>
 

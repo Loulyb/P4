@@ -9,8 +9,8 @@ function openNav() {
     }   
   }
 
+// SLIDER TOP START
 
-// Slider top start
 let indexSliderTop = 0;
 sliderTop ();
 
